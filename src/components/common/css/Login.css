@@ -1,0 +1,140 @@
+.login_container * {
+    box-sizing: border-box;
+    outline: none;
+}
+.login_container {
+    width: 100%;
+    max-width: 450px;
+    height: 100%;
+    background: #fff;
+    margin: 0 auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.login_inner{
+    width: 100%; 
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+}
+/* .login_container {
+    width: 100%;
+    max-width: 450px;
+    height: 100vh;
+    background: #fff;
+    margin: 2% auto 0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 2%;
+    border: 1px solid #ccc;
+} */
+
+.login_header {
+    background-color: #004f9b;
+    height: 50vh;
+    width: 100%;
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 250px, 0 100%);
+    position: relative;
+}
+
+.login_blocks {
+    width: 80%;
+    margin: 0 auto;
+    padding: 14% 0 12% 0;
+}
+
+.list-group {
+    list-style: none;
+    margin: 0 0 0 0;
+    padding: 0;
+}
+
+.list-group li {
+    margin: 0 0 20px 0;
+}
+
+.list-group li input {
+    border: #ffee01 solid 3px;
+    border-radius: 10px;
+    padding: 10px 10px 10px 40px;
+    width: 100%;
+    font-size: 20px;
+    margin: 0 0 0;
+}
+
+.logo {
+    float: right;
+    margin: 25px 25px 0 0;
+}
+.logo_name {
+    width: 70%;
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    transform: translateY(-70%);
+}
+
+/* .logo_name {
+    width: 70%;
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+} */
+
+.login-button {
+    border: #004f9b solid 2px;
+    background-color: #004f9b;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    font-size: 18px;
+    margin: 0;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+.login-button[disabled] {
+    opacity: 0.5;
+}
+@media (max-width:1199px) {
+    .logo_name {
+      
+        top: 50%;
+        left: 10%;
+        transform: translateY(-50%);
+    }
+    .login_container {
+        width: 100%;
+        max-width: 450px;
+        height: 100vh;
+        background: #fff;
+        margin: 0 auto 0;
+     
+    }
+}
+@media (max-width:767px) {
+    .logo_name {
+      
+        top: 50%;
+        left: 10%;
+        transform: translateY(-50%);
+    }
+    .login_container {
+        width: 100%;
+        max-width: 450px;
+        height: 100vh;
+        background: #fff;
+        margin: 0 auto 0;
+  
+    }
+}

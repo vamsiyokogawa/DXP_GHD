@@ -1,0 +1,184 @@
+
+.widgetContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 6px;
+    border: 1px solid;
+}
+
+.widgetContent {
+    position: relative;
+    border-radius: 6px;
+}
+
+.highcharts-container {
+    width: 100% !important;
+    height: 100% !important;
+    transition: 0.5s linear;
+}
+
+.highcharts-root {
+    width: 100% !important;
+    height: 100% !important;
+    transition: 0.5s linear;
+}
+
+.react-grid-item > .react-resizable-handle.react-resizable-handle-se {
+    bottom: 0;
+    right: 0;
+    cursor: se-resize;
+}
+
+.react-grid-item > .react-resizable-handle.react-resizable-handle-ne {
+    top: 0;
+    right: 0;
+    cursor: ne-resize;
+}
+
+.react-grid-item > .react-resizable-handle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+}
+
+.root_widgetContent {
+    /* overflow: auto; */
+    /* height: calc(100% - 50px); */
+    min-height: calc(100% - 55px);
+}
+
+.widgetContainer-content {
+    width: 100%;
+    height: calc(100%);
+    border-radius: 6px;
+    /* padding-top: 35px; */
+    /* padding-top: 40px; */
+    /* background: #16193a; */
+    /* border: 1px solid #d8dadc; */
+  
+}
+
+.widgetContainer-header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: cell;
+    border-radius: 5px 5px 0px 0px;
+    /* padding: 2px 0; */
+    background-color: #141619;
+}
+
+.widgetContainer-header-title {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color:#d1cfcf;
+    max-width: calc(100% - 18px);
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.widgetContainer-header-actions {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.widgetContainer-header:hover .widgetContainer-header-actions {
+    display: block;  
+    width: 100%;
+    text-align: right;
+}
+
+.widgetContainer-hidden {
+    visibility: hidden;
+}
+/* .MuiTableHead-root tr th:first-child.MuiTableCell-root{border-left: none !important;}
+.MuiTableBody-root tr td:first-child.MuiTableCell-root{border-left: none !important;}
+.MuiTableHead-root tr th:last-child.MuiTableCell-root{border-right: none !important;}
+.MuiTableBody-root tr td:last-child.MuiTableCell-root{border-right: none !important;}
+.MuiTable-root{border-left: none !important;border-right: none !important;} */
+/* .chart-icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+} */
+/* .react-grid-item > .react-resizable-handle::after {
+    content: "";
+    position: absolute;
+    right: 3px;
+    bottom: 3px;
+    width: 5px;
+    height: 5px;
+    border-right: 2px solid rgba(0, 0, 0, 0.4);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+  } */
+  .overlay {
+    height: 100% !important;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative !important;
+    top: -10%  !important;
+    width: 99%  !important;
+    text-align: center  !important;
+    transform: translate(10px, 114px) !important;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .plot-container .svg-container, .plot-container .svg-container .main-svg {
+    width:100% !important;
+    height: 100% !important;
+  }  
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .notoverlay{
+    display: none;
+  }
+
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+

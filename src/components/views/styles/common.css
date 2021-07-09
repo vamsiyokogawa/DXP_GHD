@@ -1,0 +1,26 @@
+.app-control-panel-container {
+    margin: 1em 0.6em 0;
+    padding: 0;
+}
+.app-control-panel-container h2 {
+    
+    font-family: 'Roboto', sans-serif;
+  
+    font-weight: 400;
+    padding-left: 10px;
+}
+.scrollable-container .MuiPaper-root {
+    margin: 1em 1em 3.5em;
+    border: none;
+    box-shadow: none;
+    min-height: calc(100% - 125px);
+}
+.scrollable-container .MuiPaper-root .MuiDataGrid-root {
+    /* box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%); */
+    border-radius: 6px;
+    /* background: #191e3e;
+border:2px solid #252847; */
+}
+/* .app-nav-container-hide .MuiCard-root .MuiCardContent-root .MuiList-root .MuiButtonBase-root .MuiListItemText-root {
+    display: none;
+} */

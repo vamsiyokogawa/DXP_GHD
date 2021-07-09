@@ -1,0 +1,12 @@
+.app-footer-container {
+    text-align: left;
+    background: transparent!important;
+    padding-left: 10px;
+}
+
+.footer-text {
+    font-size: 13px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    /* color: #b0afb9; */
+}

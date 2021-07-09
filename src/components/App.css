@@ -1,0 +1,127 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.app-container {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  flex-direction: column;
+}
+
+.app-header-container {
+  display: flex;
+  height: 95px;
+  /* border: dashed rgb(248, 183, 2); */
+  /* align-items: start; */
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 5px;
+  
+}
+::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+.app-content-container {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  overflow: hidden;
+  
+}
+
+.scrollable-container {
+  overflow-y: scroll;
+  flex: 1;
+}
+
+.app-footer-container {
+/* border: dashed rgb(248, 183, 2); */
+  /* height: 20px; */
+}
+
+.app-nav-container {
+  display: flex;
+  /* flex: 1; */
+  width: 210px;
+  /* border: dashed  rgb(248, 183, 2); */
+  border-bottom: none;
+  border-top: none;
+  flex-direction: column;
+  /* padding: 5px; */
+  transition: 0.5s;
+}
+
+.app-nav-container-hide {
+  /* width: 60px; */
+  width: 69.5px;
+  /* visibility: hidden; */
+  /* opacity: 0; */
+  transition: 0.5s ease-in-out, opacity 0.3s linear;
+}
+.app-workarea-container {
+  flex: 1;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-control-panel-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  
+}
+
+.app-control-panel-container .save-template-btn {
+  margin-right: 10px;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  
+}
+
+.highcharts-container, .highcharts-root { 
+  /* border: 1px solid #202226; */
+  border-radius: 6px;
+  
+}
+
+.columnflexBox {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.pro-sidebar .pro-menu > ul > .pro-sub-menu > .pro-inner-list-item {
+  position: relative;
+  /* background-color: transparent !important; */
+}
+.logo-container .MuiIconButton-colorInherit {
+  display: none;
+  color: inherit;
+}
+@media (max-width:1024px){
+  .app-nav-container {
+    width: 100%;
+    max-width: 100%;
+   
+  }
+  .logo-container .MuiIconButton-colorInherit {
+    
+    display: inline-block;
+}
+  .pro-sidebar {
+   
+    height: 100% !important;
+    width: 100% !important;
+    min-width: 100% !important;
+    }
+}

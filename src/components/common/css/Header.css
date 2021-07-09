@@ -1,0 +1,75 @@
+.logout-btn {
+    margin-bottom: 10px;
+}
+
+.add-template-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+}
+
+.template-selection-container {
+    display: flex;
+    align-items: center;
+}
+.pro-sidebar .pro-menu .pro-menu-item:first-child > .pro-inner-item > .pro-icon-wrapper .pro-icon svg {
+    width: 30px;
+    height: 30px;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 9px 10px 0px 0;
+    padding: 9px 16px;
+    border-right: 1px solid #333333;
+}
+.logo-container img {
+    height: 37px;
+}
+
+.save-btn {
+    border-radius: 4px !important;
+    margin-right: 10px !important;
+}
+.logo-side {
+    display: flex;
+    align-items: center;
+}
+@media(max-width:1024px){
+    .MuiFormControl-root.first-chld {
+        margin-left: 22px;
+    }
+}
+@media (min-width:768px) and (max-width:992px){
+    .syn-company {
+        flex-basis: 80%;
+    }
+    .mobile-ui {
+        padding-left: 22px;
+    }
+}
+@media(max-width:767px){
+    .logo-side {
+        display: flex;
+        /* width: 100%; */
+        align-items: center;
+    }
+    .mobile-ui {
+        padding-left: 22px;
+    }
+    .syn-company {
+        flex-basis: 80%;
+    }
+}
+@media(max-width:575px){
+    .logo-side {
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+    .syn-company {
+        flex-basis: 80%;
+        padding-left: 8px;
+    }
+}

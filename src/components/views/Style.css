@@ -1,0 +1,12 @@
+.app-control-panel-container{
+    margin: 1em 1em 0; 
+    padding: 0;
+}
+.app-control-panel-container h2{
+    font-family: 'Roboto', sans-serif;
+}
+
+.scrollable-container .MuiPaper-root{
+    margin: 1em 1em 3.5em; box-shadow: 0 4px 8px 0 rgb(0 0 0), 0 6px 20px 0 rgb(255 255 255 / 16%);
+ border-radius: 6px; border: 1px solid #1e2022;
+}
