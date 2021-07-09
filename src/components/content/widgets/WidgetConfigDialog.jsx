@@ -777,7 +777,6 @@ const WidgetConfigDialog = props => {
       selectedWidget.datasource &&
       selectedWidget.data_path
     ) {
-      console.log('Saving ONe')
       saveWidgetInfo();
     }
 
@@ -790,7 +789,6 @@ const WidgetConfigDialog = props => {
         selectedWidgetInfo.group === Constants.widgets.IMAGE.group ||
         selectedWidgetInfo.group === Constants.widgets.LABELURL.group)
     ) {
-      console.log('Saving Two')
       saveWidgetInfo();
     }
   };
