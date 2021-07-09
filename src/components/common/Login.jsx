@@ -23,8 +23,8 @@ const Login = () => {
         }
     }, [isLogged]);
 
-    const onLoginClick = () => {
-        console.log('in');
+    const onSubmit = (e)=>{
+        e.preventDefault();
         dispatch({
             type: Constants.EVT_LOGIN_ON_LOGIN,
             value: {
@@ -33,7 +33,20 @@ const Login = () => {
                 grantType: Constants.grantType,
             },
         });
-    };
+    }
+
+
+    // const onLoginClick = () => {
+        
+    //     dispatch({
+    //         type: Constants.EVT_LOGIN_ON_LOGIN,
+    //         value: {
+    //             username: userName.trim(),
+    //             password: password.trim(),
+    //             grantType: Constants.grantType,
+    //         },
+    //     });
+    // };
 
     return (
         <div className="login_container">
@@ -43,6 +56,8 @@ const Login = () => {
                 <div className="logo_name">Energy Dashboard</div>
             </div>
             <div className="login_blocks">
+                <form onSubmit={onSubmit}>
+
                 <ul className="list-group">
                     <li>
                         <input
@@ -70,16 +85,17 @@ const Login = () => {
                     </li>
                     <li>
                         <button
-                            type="button"
+                            type="submit"
                             id="btnLogin"
                             className="login-button"
-                            onClick={onLoginClick}
+                            onClick={onSubmit}
                             disabled={!userName && !password}
                         >
                             LOGIN
                         </button>
                     </li>
                 </ul>
+                </form>
             </div>
         </div>
         </div>
