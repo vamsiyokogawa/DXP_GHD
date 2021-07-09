@@ -6,11 +6,7 @@ import _ from "lodash";
 import * as Constants from "./Constants";
 import chartService from "../services/chartService";
 import store from "../redux/store";
-import orange from "../assets/orange.png";
-import green from "../assets/green.png";
-import red from "../assets/red.png";
-import white from "../assets/white.png";
-import { CollectionsBookmarkOutlined } from "@material-ui/icons";
+
 
 export function setAuthenticationTokenHeaders(token) {
   axios.interceptors.request.use(function(config) {
@@ -745,27 +741,27 @@ export const getGridMetadata = (response, widgetSetting, tables) => {
   return tables;
 };
 
-const getCategoriesFormat = (response, tables, xAxis) => {
-  let categories = [];
-  if (
-    response &&
-    response.data &&
-    response.data.config &&
-    response.data.config.Metrics
-  ) {
-    if (!_.isEmpty(response.data.config.Metrics)) {
-      _.forEach(response.data.config.Metrics, function(value, key) {
-        if (value.length > 0) {
-          _.forEach(value, function(arrayData) {
-            categories[arrayData.Date] = [arrayData.Date, ""];
-          });
-        }
-      });
-    }
-  }
+// const getCategoriesFormat = (response, tables, xAxis) => {
+//   let categories = [];
+//   if (
+//     response &&
+//     response.data &&
+//     response.data.config &&
+//     response.data.config.Metrics
+//   ) {
+//     if (!_.isEmpty(response.data.config.Metrics)) {
+//       _.forEach(response.data.config.Metrics, function(value, key) {
+//         if (value.length > 0) {
+//           _.forEach(value, function(arrayData) {
+//             categories[arrayData.Date] = [arrayData.Date, ""];
+//           });
+//         }
+//       });
+//     }
+//   }
 
-  return categories;
-};
+//   return categories;
+// };
 
 export const formatResponseLineChart = (response, tables, xAxis, yAxis) => {
   let data = [];
@@ -1151,7 +1147,7 @@ export const formatResponseBarChart = (response, tables, xAxis, yAxis) => {
     response.data.config &&
     response.data.config.Metrics
   ) {
-    let tableName = [];
+    
     tables.forEach(table => {
 
       let table_name = table.tableName;
@@ -1174,7 +1170,7 @@ export const formatResponseBarChart = (response, tables, xAxis, yAxis) => {
 
         recordObj['axisTitle'][table.axisPosition] = 
         (typeof recordObj['axisTitle'][table.axisPosition] != 'undefined' && 
-        recordObj['axisTitle'][table.axisPosition] != '') ? 
+        recordObj['axisTitle'][table.axisPosition] !== '') ? 
         recordObj['axisTitle'][table.axisPosition] +'/'+table_name : table_name;
 
         table_data.forEach(tableInfo => {
@@ -1403,9 +1399,9 @@ export const formatResponseGridChart = (response, tables, widgetSetting) => {
           }
 
           let fieldAlign = 'leftRow';
-          if(align && align == 'right') {
+          if(align && align === 'right') {
             fieldAlign = 'rightRow';
-          } else if(align && align == 'center') {
+          } else if(align && align === 'center') {
             fieldAlign = 'centerRow';
           }
           let fieldStyle = {};

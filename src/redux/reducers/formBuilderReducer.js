@@ -15,7 +15,7 @@ const initialState = {
   previewItems: []
 };
 
-export default (state = initialState, action) => {
+const reducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_ITEM_TO_PREVIEW:
       return {
@@ -81,3 +81,4 @@ export default (state = initialState, action) => {
       return state;
   }
 };
+export default reducer;

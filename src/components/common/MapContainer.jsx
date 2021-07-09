@@ -4,10 +4,7 @@ import * as Constants from "../../constants/Constants";
 import mapStyles from "../../constants/GoogleMapStyles";
 
 class MapCont extends Component {
-    constructor(props) {
-        super(props);
-    }
-
+    
     render() {
         const { width, height, latLong, darkMode } = this.props;
         return (

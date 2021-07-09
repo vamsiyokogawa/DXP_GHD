@@ -1,5 +1,4 @@
 import { Breadcrumbs, Link, makeStyles, Typography } from "@material-ui/core";
-import { theme } from "highcharts";
 import React from "react";
 import { useSelector } from "react-redux";
 

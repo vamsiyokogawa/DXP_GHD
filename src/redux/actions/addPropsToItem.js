@@ -1,6 +1,6 @@
 import uuid from 'uuid/v4';
 
-export default (item) => {
+const optionSwither = (item) => {
   switch (item) {
     case 'Buttons':
       return {
@@ -53,3 +53,5 @@ export default (item) => {
       return;
   }
 }
+
+export default optionSwither;
